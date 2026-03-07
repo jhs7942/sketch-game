@@ -5,11 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@sketch-game/shared": "*",
     "perfect-freehand": "^1.2.2",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
