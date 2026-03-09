@@ -95,6 +95,16 @@ function handleAllSubmitted(roomId: string) {
   const room = getRoom(roomId)
   if (!room) return
 
+  // 미제출 플레이어에 대해 빈 콘텐츠 자동 제출
+  if (room.state === 'PLAYING') {
+    const stepType = getCurrentStepType(room)
+    room.players.forEach(player => {
+      if (!player.isReady) {
+        submitTurn(roomId, player.id, '', stepType)
+      }
+    })
+  }
+
   const updated = advanceTurn(roomId)
   if (!updated) return
 

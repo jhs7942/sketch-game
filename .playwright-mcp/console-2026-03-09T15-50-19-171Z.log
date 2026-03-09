@@ -1,0 +1,11 @@
+[  150463ms] NotFoundError: Failed to execute 'setPointerCapture' on 'Element': No active pointer with the given id is found.
+    at onPointerDown (http://localhost:5173/src/components/canvas/DrawingCanvas.tsx:109:14)
+    at executeDispatch (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1f4dc967:13622:11)
+    at runWithFiberInDEV (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1f4dc967:997:72)
+    at processDispatchQueue (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1f4dc967:13658:37)
+    at http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1f4dc967:14071:11
+    at batchedUpdates$1 (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1f4dc967:2626:42)
+    at dispatchEventForPluginEventSystem (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1f4dc967:13763:9)
+    at dispatchEvent (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1f4dc967:16784:13)
+    at dispatchDiscreteEvent (http://localhost:5173/node_modules/.vite/deps/react-dom_client.js?v=1f4dc967:16765:62)
+    at eval (eval at evaluate (:301:30), <anonymous>:10:10)

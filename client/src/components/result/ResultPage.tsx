@@ -73,9 +73,9 @@ export default function ResultPage() {
             이전
           </button>
           <button
-            onClick={() => setResultIndex(resultIndex + 1)}
-            disabled={isLast}
-            className="flex-1 bg-white hover:bg-white/90 disabled:opacity-30 text-orange-600 font-bold py-3 rounded-2xl transition-colors"
+            onClick={() => !isLast && setResultIndex(resultIndex + 1)}
+            disabled={false}
+            className="flex-1 bg-white hover:bg-white/90 text-orange-600 font-bold py-3 rounded-2xl transition-colors"
           >
             {isLast ? '끝!' : '다음'}
           </button>
