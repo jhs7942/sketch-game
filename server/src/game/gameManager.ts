@@ -156,7 +156,7 @@ export function advanceTurn(roomId: string): Room | null {
   room.submittedCount = 0
   room.players.forEach(p => (p.isReady = false))
 
-  if (room.currentTurn >= room.players.length) {
+  if (room.currentTurn > room.players.length) {
     room.state = 'RESULT'
   } else {
     room.state = 'PLAYING'
